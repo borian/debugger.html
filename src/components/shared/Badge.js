@@ -1,7 +1,13 @@
-import React from "react";
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at <http://mozilla.org/MPL/2.0/>. */
+
+// @flow
+
+import * as React from "react";
 import "./Badge.css";
 
-const Badge = ({ children }) => (
+const Badge = ({ children }: { children: React.Node }) => (
   <div className="badge text-white text-center">{children}</div>
 );
 
